@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Faulkner Study Guide</title>
+</head>
+<body>
+<nav class="navbar navbar-expand-md navbar-light bg-light">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="timeline.html">Timeline</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="characters.html">Characters</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="themes.html">Themes</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<div class="container-fluid">
+    <div class="jumbotron">Important Characters to Pay Attention To</div>
+    <h1>Directly from the McCaslin Family Tree</h1>
+    <img src="http://www.people.virginia.edu/~sfr/FAULKNER/gdmgen3.jpg" usemap="#image-map">
+    <h3>Other Characters Important to the Stories</h3>
+    <div class="row">
+        <div class="col"><a href="#mainModal" data-toggle="modal">Sam Fathers</a></div>
+        <div class="col"><a href="#mainModal" data-toggle="modal">Major de Spain</a></div>
+        <div class="col"><a href="#mainModal" data-toggle="modal">Boon Hogganbeck</a></div>
+    </div>
+    <div class="row">
+        <div class="col"><a href="#mainModal" data-toggle="modal">General Compson</a></div>
+        <div class="col"><a href="#mainModal" data-toggle="modal">Old Ben</a></div>
+        <div class="col"><a href="#mainModal" data-toggle="modal">Lion</a></div>
+    </div>
+</div>
+
+
+<map name="image-map">
+    <area id="ike" href="#mainModal" data-toggle="modal" coords="556,238,438,191" shape="rect">
+    <area id="carothers" href="#mainModal" data-toggle="modal" coords="244,47,664,73" shape="rect">
+    <area id="buck" href="#mainModal" data-toggle="modal" coords="462,106,566,145" shape="rect">
+    <area id="buddy" href="#mainModal" data-toggle="modal" coords="572,103,689,145" shape="rect">
+</map>
+
+<div class="modal fade" id="mainModal" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalLabel">Modal Title</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div id="description"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script type="text/javascript">
+    var descr = {
+        "IKE": "He is the main character in The Bear. His childhood and coming of age is mainly defined by his yearly " +
+                "hunting expeditions in Major de Spain’s woods. Each year, Ike goes on a hunting expedition with Major de Spain," +
+            " his cousin (McCaslin), Sam Fathers, Boon, and General Compson. Ike looks up to Sam as a role model because his" +
+            " parents died when Ike was very young. Ike always believed that either he or Sam would be the one to kill Old Ben," +
+            " the elusive and strong bear that roams the woods. No one can seem to hunt Old Ben, but Ike believes he can do so." +
+            " After all, he has been hunting since he was a little kid. This. however, did not end up happening." +
+            "In scene 4, Ike is also set to inherit his family plantation but attempts to forego his inheritance on the grounds " +
+            "that no one should own land just like no one should own people (the land has previously been owned by Native Americans " +
+            "and was cared for by his family’s slaves for generations).",
+        "SAM FATHERS" : "Sam Fathers is Ike’s role model in the story. Ike looks up to him as royalty of the woods " +
+            "because everything Ike knows about the woods and hunting was taught to him by Sam. Sam is half Native " +
+            "American royalty and half black and knows everything there is to know about the woods but is still not " +
+            "treated as a high class Native American member of society because of his mixed heritage. Sam dies randomly " +
+            "during the final hunt for Old Ben perhaps because the death of Old Ben meant the death of the woods and " +
+            "Sam’s purpose in life was to be in the woods.",
+        "MAJOR DE SPAIN" : "Major de Spain is the owner of the land that Ike, Ike’s cousin (McCaslin), Sam Fathers, Boon," +
+            " and General Compson go hunting on each year. He decides to sell the land to a logging company towards the" +
+            " end of the story and refuses to go on one last final hunt because It would be too painful to see his woods " +
+            "right before they get chopped down.",
+        "CASS" : "Cass is Ike’s cousin who has taken care of him since his parents died when he was very young. " +
+            "Cass also agreed to takes care of Ike’s estate until Ike turns 21 and can inherit it fully. Cas also goes " +
+            "on the yearly hunt with Ike.",
+        "BOON HOGGANBACK" : "Boon is the character who eventually ends up killing Old Ben. He is considered a lower class person " +
+            "throughout the story. Boon takes ownership of Lion after Sam trains him and uses him to hunt Old Ben.",
+        "GENERAL COMPSON" : "He is another man who goes hunting with the group every year on Major de Spain’s land.",
+        "CAROTHERS" : "He is the grandfather of Ike and Cas. He used to own the McCaslin plantation and has a " +
+            "“shadow family” that comes from relationships with his own slaves and their daughters. ",
+        "BUCK": "He is the father of Ike and inherits the plantation along with his twin brother (Buddy) from their father, Carothers. He dies shortly after Ike’s birth and leaves the plantation to him.",
+        "BUDDY": "He is the twin brother of Buck and also inherits part of the plantation from Carothers (his father). He also dies around the time of Ike’s birth and the plantation ends up being passed onto Ike from him and Buck.",
+        "OLD BEN": "He is the above average sized bear that lives in Major de Spain’s woods. He is impossible to hunt and almost impossible to find. Every dog that tries to hunt him is too scared to attack him except for Lion. Old Ben is eventually killed by Boon after Lion attacks him. Ike had always believed that only Sam (who he looked upon as royalty).",
+        "LION":"The wild dog that Sam Fathers finds in the woods. Sam tames him by starving him multiple times but leaves him partly wild so that he will not be afraid of Old Ben. Boon eventually takes ownership of Lion. Lion eventually dies while attacking Old Ben."
+    };
+    var titles = {
+        "IKE": "Isaac \"Ike\" McCaslin",
+        "SAM FATHERS" : "Sam Fathers",
+        "MAJOR DE SPAIN" : "Major de Spain",
+        "CASS" : "McCaslin \"Cass\" Edmonds",
+        "BOON HOGGANBACK" : "Boon Hogganback.",
+        "GENERAL COMPSON" : "General Compson",
+        "CAROTHERS" : "Carothers McCaslin ",
+        "BUCK": "Theophilus McCaslin (Uncle Buck)",
+        "BUDDY": "Amodeus McCaslin (Uncle Buddy)",
+        "OLD BEN": "Old Ben",
+        "LION":"Lion"
+    };
+    $("#mainModal").on('show.bs.modal', function (event) {
+        var source = $(event.relatedTarget);
+        var dictInd = source[0].innerText;
+        if (dictInd === "") {
+            dictInd = source[0].id;
+        }
+        dictInd = dictInd.toUpperCase();
+        $("#description").text(descr[dictInd]);
+        $(".modal-title").text(titles[dictInd]);
+    });
+</script>
+</body>
+</html>
