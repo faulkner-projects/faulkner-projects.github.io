@@ -97,7 +97,7 @@
         "CASS" : "Cass is Ike’s cousin who has taken care of him since his parents died when he was very young. " +
             "Cass also agreed to takes care of Ike’s estate until Ike turns 21 and can inherit it fully. Cas also goes " +
             "on the yearly hunt with Ike.",
-        "BOON HOGGANBACK" : "Boon is the character who eventually ends up killing Old Ben. He is considered a lower class person " +
+        "BOON HOGGANBECK" : "Boon is the character who eventually ends up killing Old Ben. He is considered a lower class person " +
             "throughout the story. Boon takes ownership of Lion after Sam trains him and uses him to hunt Old Ben.",
         "GENERAL COMPSON" : "He is another man who goes hunting with the group every year on Major de Spain’s land.",
         "CAROTHERS" : "He is the grandfather of Ike and Cas. He used to own the McCaslin plantation and has a " +
@@ -112,7 +112,7 @@
         "SAM FATHERS" : "Sam Fathers",
         "MAJOR DE SPAIN" : "Major de Spain",
         "CASS" : "McCaslin \"Cass\" Edmonds",
-        "BOON HOGGANBACK" : "Boon Hogganback.",
+        "BOON HOGGANBECK" : "Boon Hogganback.",
         "GENERAL COMPSON" : "General Compson",
         "CAROTHERS" : "Carothers McCaslin ",
         "BUCK": "Theophilus McCaslin (Uncle Buck)",
@@ -128,6 +128,7 @@
             dictInd = source[0].id;
         }
         dictInd = dictInd.toUpperCase();
+        console.log(dictInd, descr[dictInd], titles[dictInd]);
         $("#description").text(descr[dictInd]);
         $(".modal-title").text(titles[dictInd]);
     });
