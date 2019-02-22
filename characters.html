@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <title>Characters</title>
 
-    <title>Faulkner Study Guide</title>
 </head>
 <body>
 <nav class="navbar navbar-expand-md navbar-light bg-light">
@@ -29,10 +30,10 @@
         </ul>
     </div>
 </nav>
-<div class="container-fluid">
+<div class="container">
     <div class="jumbotron">Important Characters to Pay Attention To</div>
     <h1>Directly from the McCaslin Family Tree</h1>
-    <img src="http://www.people.virginia.edu/~sfr/FAULKNER/gdmgen3.jpg" usemap="#image-map">
+    <img class="center-h" src="http://www.people.virginia.edu/~sfr/FAULKNER/gdmgen3.jpg" usemap="#image-map">
     <h3>Other Characters Important to the Stories</h3>
     <div class="row">
         <div class="col"><a href="#mainModal" data-toggle="modal">Sam Fathers</a></div>
@@ -45,13 +46,12 @@
         <div class="col"><a href="#mainModal" data-toggle="modal">Lion</a></div>
     </div>
 </div>
-
-
 <map name="image-map">
     <area id="ike" href="#mainModal" data-toggle="modal" coords="556,238,438,191" shape="rect">
     <area id="carothers" href="#mainModal" data-toggle="modal" coords="244,47,664,73" shape="rect">
     <area id="buck" href="#mainModal" data-toggle="modal" coords="462,106,566,145" shape="rect">
     <area id="buddy" href="#mainModal" data-toggle="modal" coords="572,103,689,145" shape="rect">
+    <area id="cass" href="#mainModal" data-toggle="modal" coords="690,178,778,226" shape="rect">
 </map>
 
 <div class="modal fade" id="mainModal" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
@@ -122,6 +122,7 @@
     };
     $("#mainModal").on('show.bs.modal', function (event) {
         var source = $(event.relatedTarget);
+        console.log(source);
         var dictInd = source[0].innerText;
         if (dictInd === "") {
             dictInd = source[0].id;
